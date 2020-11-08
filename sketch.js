@@ -13,8 +13,8 @@ var bool1, arr1, score;
 engine: engine;
 
 function preload(){
- heximg = loadImage("Images/hex.png");
- hex2img = loadImage("Images/hex2.jpg");
+ //heximg = loadImage("Images/hex.png");
+ //hex2img = loadImage("Images/hex2.jpg");
 }
 
 function setup(){
@@ -99,7 +99,7 @@ function draw(){
     
     hex.display();
     imageMode(CENTER);
-     image(heximg,hex.body.position.x,hex.body.position.y,30,30)
+     //image(heximg,hex.body.position.x,hex.body.position.y,30,30)
     sling.display();
     if (bool1 == true){
       Matter.Body.setPosition(hex.body,{x:mouseX,y:mouseY});  
@@ -148,7 +148,7 @@ async function getBackgroundImg(){
     
     if(hour>=06 && hour<=19){
         bg = "BLUE";
-        heximg = hex2img
+        //heximg = hex2img
     }
     else{
         bg = "BLACK";
